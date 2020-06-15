@@ -6,6 +6,7 @@ package ru.int24.cripto
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         mInterstitialAd = InterstitialAd(this)
         mInterstitialAd.adUnitId = "ca-app-pub-3940256099942544/1033173712"
         mInterstitialAd.loadAd(AdRequest.Builder().build())
+
+        for (n in 0..10){
+            Log.d("Mylog", "N is $n")
+        }
 
     }
 
